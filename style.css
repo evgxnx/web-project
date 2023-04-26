@@ -235,17 +235,15 @@ html{
   }
 
   form {
-    width: 15hv !important;
     justify-content: center !important;
     align-items: center !important;
-    height: 15hv !important;
     font-size: 16px;
   }
   
   .submit-btn-form {
     margin-top: 0.5rem;
     background-color: var(--btn-color) !important;
-    font-size: 16px;
+    font-size: 16px !important;
   }
 
   .modal-title {
