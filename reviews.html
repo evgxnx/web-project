@@ -43,7 +43,7 @@
                 </div>
                 <div class="icons ml-auto">
                     <div id="menu-bar" class="fas fa-bars"></div>
-                    <a href="#" class="btn btn-primary btn-transparent">contact us</a>
+                    <button type="button" class="btn btn-primary btn-transparent contact-btn btn-xl" data-toggle="modal" data-target="#contactModal">Contact us</button>
                 </div>
             </nav>
         </div>
@@ -58,7 +58,9 @@
               <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <div class="img-box"><img src="https://i.ibb.co/d5DY64w/img1.jpg" alt=""></div>
+                    <div class="container">
+                      <div class="img-box"><img class="img-fluid" src="https://i.ibb.co/d5DY64w/img1.jpg" alt=""></div>
+                    </div>
                     <p class="testimonial t text-center"> I had the pleasure of dining at her restaurant, Food Lover, and the experience was simply unforgettable. The pizza was perfectly crisp and the burgers were juicy and bursting with flavor. But what really stood out were the waffles - they were unlike any waffles I've ever tasted before! The combination of crispy exterior and fluffy interior was just perfect.
 
                         The coffee and tea were also outstanding, and the service was impeccable. Chef Jennifer truly knows how to create a warm and welcoming atmosphere that makes you feel right at home. I highly recommend Food Lover to anyone looking for a delicious and memorable dining experience.
@@ -122,5 +124,42 @@
             <a href="gallery.html" class="btn btn-sm text-decoration-none">Gallery</a>
         </nav>
       </footer>
+
+
+      <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea class="form-control" id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn-form">Submit</button>
+                  </form>
+                  
+            </div>
+          </div>
+        </div>
+      </div>  
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>

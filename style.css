@@ -228,6 +228,35 @@ html{
     background-color: transparent !important;
 }
 
+.btn-xl {
+    font-size: 30px !important; 
+    padding: 10px 28px !important;
+    border-color: orange !important;
+  }
+
+  form {
+    width: 15hv !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 15hv !important;
+    font-size: 16px;
+  }
+  
+  .submit-btn-form {
+    margin-top: 0.5rem;
+    background-color: var(--btn-color) !important;
+    font-size: 16px;
+  }
+
+  .modal-title {
+    font-size: 16px;
+  }
+
+  .img-fluid {
+    max-width: 500px !important;
+    height: auto !important;
+  }
+
 
 
 .main-home{
@@ -292,7 +321,7 @@ html{
     padding-bottom: 48px;
 }
 .about-content .about-inner-content img{
-    width: 80%;
+    width: 80% ;
     margin-left: 100px;
 }
 .about-text-content{
@@ -617,6 +646,4 @@ html{
         width: auto;
         height: 2000px;
     }
-
-    
   }
