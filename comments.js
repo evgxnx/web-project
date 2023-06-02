@@ -1,12 +1,20 @@
 const nameInput = document.getElementById('name-input');
-const ratingInput = document.getElementById('rating-input');
+const ratingInputs = document.querySelectorAll('input[name="rating"]');
 const commentInput = document.getElementById('comment-input');
 const submitButton = document.getElementById('submit-button');
 const commentsContainer = document.getElementById('comments-container');
 
 function submitComment() {
   const name = nameInput.value;
-  const rating = ratingInput.value;
+  let rating;
+
+  for (const input of ratingInputs) {
+    if (input.checked) {
+      rating = input.value;
+      break;
+    }
+  }
+
   const comment = commentInput.value;
 
   const commentElement = document.createElement('div');
@@ -22,8 +30,8 @@ function submitComment() {
   saveComment({ name, rating, comment });
 
   nameInput.value = '';
-  ratingInput.value = '1';
   commentInput.value = '';
+  ratingInputs[0].checked = true;
 }
 
 function saveComment(comment) {
